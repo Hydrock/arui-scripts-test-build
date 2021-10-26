@@ -1,0 +1,14 @@
+{
+  "name": "jest-snapshot-serializer-class-name-to-string",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Heymdall/jest-snapshot-serializer-class-name-to-string",
+  "author": "Aleksandr Kitov",
+  "license": "MIT",
+  "devDependencies": {
+    "arui-presets": "^3.1.0"
+  },
+  "scripts": {
+    "lint": "eslint ./*.js"
+  }
+}

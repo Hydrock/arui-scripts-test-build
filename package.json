@@ -1,0 +1,19 @@
+{
+  "name": "arui-scripts-test-build",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "arui-scripts": "11.7.0"
+  },
+  "scripts": {
+    "start": "arui-scripts start",
+    "build": "arui-scripts build"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^20.2.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "typescript": ">=3.7.3"
+  }
+}
