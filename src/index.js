@@ -6,6 +6,7 @@ ReactDOM.render(
     <App />,
     document.getElementById('react-app')
 );
+
 if (module.hot) {
     module.hot.accept('./app', () => {
         const NextAppAssignments = require('./app').default;
@@ -15,3 +16,4 @@ if (module.hot) {
         );
     });
 }
+
