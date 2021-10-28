@@ -9,9 +9,13 @@ const init = async () => {
         // host: 'localhost'
     });
 
-    const assets = readAssetsManifest();
+    let assets = [];
 
-    // {"js":["assets/main.js"],"css":[]}
+    try {
+        assets = readAssetsManifest();
+    } catch (e) {
+        
+    }
 
     server.route({
         method: 'GET',
