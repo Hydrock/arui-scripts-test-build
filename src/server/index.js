@@ -6,21 +6,16 @@ const init = async () => {
 
     const server = Hapi.server({
         port: 3000,
-        // host: 'localhost'
+        host: 'localhost'
     });
-
-    let assets = [];
-
-    try {
-        assets = readAssetsManifest();
-    } catch (e) {
-        
-    }
 
     server.route({
         method: 'GET',
         path: '/',
         handler: (request, h) => {
+            // {"js":["assets/main.js"],"css":[]}
+            const assets = readAssetsManifest();
+
             return `
                 <html>
                     <head>
