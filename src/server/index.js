@@ -13,8 +13,11 @@ const init = async () => {
         method: 'GET',
         path: '/',
         handler: (request, h) => {
-            // {"js":["assets/main.js"],"css":[]}
-            const assets = readAssetsManifest();
+            try {
+                assets = readAssetsManifest();
+            } catch (e) {
+                
+            }
 
             return `
                 <html>
