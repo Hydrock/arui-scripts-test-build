@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "arui-scripts": "11.8.0-feat-webpack5.6"
+    "arui-scripts": "11.8.0-feat-webpack5.7"
   },
   "scripts": {
     "start": "arui-scripts start",
