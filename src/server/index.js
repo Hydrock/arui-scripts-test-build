@@ -11,11 +11,7 @@ const init = async () => {
 
     let assets = [];
 
-    try {
-        assets = readAssetsManifest();
-    } catch (e) {
-        
-    }
+    
 
     console.log('assets', assets);
 
@@ -23,6 +19,12 @@ const init = async () => {
         method: 'GET',
         path: '/',
         handler: (request, h) => {
+            try {
+                assets = readAssetsManifest();
+            } catch (e) {
+                
+            }
+
             return `
                 <html>
                     <head>
