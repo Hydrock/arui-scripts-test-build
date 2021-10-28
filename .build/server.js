@@ -186,6 +186,7 @@ const init = async () => {
     assets = (0,_read_assets_manifest_js__WEBPACK_IMPORTED_MODULE_0__.readAssetsManifest)();
   } catch (e) {}
 
+  console.log('assets', assets);
   server.route({
     method: 'GET',
     path: '/',

@@ -17,6 +17,8 @@ const init = async () => {
         
     }
 
+    console.log('assets', assets);
+
     server.route({
         method: 'GET',
         path: '/',
